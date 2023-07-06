@@ -5,12 +5,10 @@ public class IntegerDivider {
         if(divider == 0) {
             System.out.println("division by zero");
         } else {
-            double dividendDouble = (double) dividend;
-            double dividerDouble = (double) divider;
-            double divisionResult = dividendDouble / dividerDouble;
-            divisionResult *= dividerDouble;
+            int divisionResult = dividend / divider;
+            divisionResult *= divider;
 
-            if(divisionResult == dividendDouble) {
+            if(divisionResult == dividend) {
                 System.out.println("can be divided completely");
             } else {
                 System.out.println("cannot be divided completely");
